@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johnify — Risposte automatiche e prenotazione appuntamenti</title>
+    <meta
+      name="description"
+      content="Johnify risponde ai clienti 24/7, prenota appuntamenti e riduce le richieste manuali."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <div class="logo">Johnify</div>
+        <nav>
+          <a href="#prenota" class="nav-link">Prenota una call</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="badge">Risposte automatiche 24/7</span>
+            <h1>Ogni richiesta senza risposta è una decisione rimandata.</h1>
+            <p class="lead">
+              Johnify aiuta studi e attività su appuntamento a rispondere ai clienti in ogni momento,
+              prenotare appuntamenti e ridurre il lavoro ripetitivo senza assumere altro personale.
+            </p>
+            <div class="cta-row">
+              <a href="#prenota" class="btn btn-primary">Prenota una call Zoom di 15 minuti</a>
+              <a href="dettagli.html" class="btn btn-secondary">Scopri di più</a>
+            </div>
+            <p class="microcopy">Senza moduli lenti, senza attese, senza perdere richieste importanti.</p>
+          </div>
+
+          <div class="hero-card">
+            <div class="card-top">
+              <span class="dot dot-green"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-red"></span>
+            </div>
+            <div class="chat-bubble user">Buonasera, posso prenotare per domani?</div>
+            <div class="chat-bubble bot">Certo. Ti mostro gli orari disponibili e prenoto subito.</div>
+            <div class="chat-bubble user">Vorrei anche spostare il mio appuntamento.</div>
+            <div class="chat-bubble bot">Fatto. Il calendario è aggiornato in tempo reale.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="problema">
+        <div class="container">
+          <h2>Il problema non è il servizio. È la gestione delle richieste.</h2>
+          <p class="section-text">
+            Molti professionisti pensano che serva solo fare più pubblicità o abbassare i prezzi.
+            In realtà, il punto spesso è un altro: le richieste arrivano quando nessuno può rispondere.
+          </p>
+
+          <div class="grid-3">
+            <div class="feature-card">
+              <h3>Telefono occupato</h3>
+              <p>Il cliente chiama mentre stai lavorando e non riesce a parlare con nessuno.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Messaggi fuori orario</h3>
+              <p>Le richieste arrivano di sera, nel weekend o quando lo studio è chiuso.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Stesse domande</h3>
+              <p>Orari, disponibilità, prenotazioni, spostamenti e cancellazioni richiedono sempre tempo.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container split">
+          <div>
+            <h2>Johnify risponde, prenota e aggiorna il calendario.</h2>
+            <p class="section-text">
+              John, il widget AI di Johnify, si integra nel tuo sito e risponde ai clienti 24/7.
+              Può gestire prenotazioni, cancellazioni e riprogrammazioni direttamente sul tuo Google Calendar.
+            </p>
+            <ul class="checklist">
+              <li>Risposte immediate, anche quando sei occupato.</li>
+              <li>Gestione automatica delle richieste più comuni.</li>
+              <li>Meno tempo perso e più attenzione al lavoro vero.</li>
+              <li>Costo molto inferiore a un nuovo dipendente.</li>
+            </ul>
+          </div>
+
+          <div class="info-box">
+            <h3>Un esempio concreto</h3>
+            <p>
+              È sera, il sito riceve una richiesta, il cliente prenota una call o sposta un appuntamento,
+              e il giorno dopo trovi tutto già aggiornato senza aver risposto manualmente.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="prenota">
+        <div class="container booking">
+          <h2>Prenota una call Zoom di 15 minuti</h2>
+          <p class="section-text">
+            Clicca sul bottone qui sotto: ti porterà alla tua pagina di prenotazione. Inserisci poi il link reale del tuo strumento.
+          </p>
+
+          <a
+            class="btn btn-primary btn-large"
+            href="https://cal.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="bookingButton"
+          >
+            Prenota adesso
+          </a>
+
+          <p class="microcopy">
+            Sostituisci il link del bottone con il tuo link di prenotazione personale.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>Johnify</p>
+        <p>Automazione per richieste, prenotazioni e appuntamenti.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
