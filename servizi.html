@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servizi — Johnify | Siti Web 24h + Chatbot AI John</title>
+  <meta name="description" content="Scopri tutti i servizi Johnify: creazione siti web in 24 ore, chatbot AI John 24/7, gestione Google Calendar, manutenzione mensile. Prezzi competitivi.">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Public+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function(){
+      try {
+        var s = window['localStorage'];
+        var t = s ? s.getItem('johnify-theme') : null;
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch(e){}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo" aria-label="Johnify home">
+          <img src="logo.png" alt="Johnify">
+          Johnify
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servizi.html" class="active">Servizi</a></li>
+          <li><a href="chatbot.html">Chatbot John</a></li>
+          <li><a href="prezzi.html">Prezzi</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" data-theme-toggle aria-label="Cambia tema">
+            <svg id="themeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </button>
+          <a href="contatti.html" class="btn btn-primary">Inizia Ora</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Apri menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">I nostri servizi</span>
+      <h1>Tutto quello che ti serve per dominare online</h1>
+      <p>Dal sito web all'assistente AI che lavora 24/7. Johnify copre ogni aspetto della tua presenza online — velocemente e a un prezzo onesto.</p>
+    </div>
+  </section>
+
+  <!-- SERVICE: SITO WEB -->
+  <section class="section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="section-label">Servizio 1</span>
+          <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">Sito Web Professionale in 24 ore</h2>
+          <p style="color: var(--color-text-muted); margin-bottom: var(--space-6);">Un sito web moderno, veloce e ottimizzato — pronto e online entro domani. Niente attese di settimane, niente tecnici che ti parlano sopra la testa. Tu ci dici cosa fa la tua attività, noi ti delivery un sito che converte visitatori in clienti.</p>
+          <ul class="service-features" style="margin-bottom: var(--space-8);">
+            <li>Design moderno, pulito e responsive (perfetto su mobile, tablet e desktop)</li>
+            <li>Ottimizzato per la SEO — farsi trovare su Google</li>
+            <li>Velocità di caricamento eccezionale (sotto i 2 secondi)</li>
+            <li>Integrazione Google Maps, Google Calendar e moduli di contatto</li>
+            <li>Dominio personalizzato e hosting incluso</li>
+            <li>Pulsanti click-to-call e WhatsApp integrati</li>
+            <li>Sezione recensioni e testimonianze clienti</li>
+          </ul>
+          <div class="service-price" style="border: none; padding-top: 0;">
+            <span class="service-price-value">€350</span>
+            <span class="service-price-period">una tantum · online in 24h</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="chat-preview">
+            <div class="chat-preview-header">
+              <div class="chat-preview-avatar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <div>
+                <div class="chat-preview-name">Il tuo nuovo sito</div>
+                <div class="chat-preview-status">Online in 24 ore</div>
+              </div>
+            </div>
+            <div class="chat-preview-body" style="min-height: 200px; justify-content: center;">
+              <div class="chat-msg chat-msg-bot">✓ Design moderno e responsive</div>
+              <div class="chat-msg chat-msg-bot">✓ Ottimizzato per Google (SEO)</div>
+              <div class="chat-msg chat-msg-bot">✓ Veloce, sicuro, professionale</div>
+              <div class="chat-msg chat-msg-bot">✓ Pronto in 24 ore</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE: CHATBOT -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-visual">
+          <div class="chat-preview">
+            <div class="chat-preview-header">
+              <div class="chat-preview-avatar">J</div>
+              <div>
+                <div class="chat-preview-name">John</div>
+                <div class="chat-preview-status">Online · 24/7</div>
+              </div>
+            </div>
+            <div class="chat-preview-body">
+              <div class="chat-msg chat-msg-bot">Ciao! Ho visto che sei interessato. Posso aiutarti?</div>
+              <div class="chat-msg chat-msg-user">Quanto costa il servizio X?</div>
+              <div class="chat-msg chat-msg-bot">Il servizio X costa €50. Vuoi prenotare un appuntamento?</div>
+              <div class="chat-msg chat-msg-user">Sì, domani pomeriggio se possibile</div>
+              <div class="chat-msg chat-msg-bot">Ho posto domani alle 15:00. Confermo?</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-content">
+          <span class="section-label">Servizio 2</span>
+          <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">John — Assistente AI 24/7</h2>
+          <p style="color: var(--color-text-muted); margin-bottom: var(--space-6);">John è un chatbot AI addestrato sui dati del tuo business. Risponde a ogni domanda dei clienti, prenota e gestisce appuntamenti direttamente sul tuo Google Calendar. È il dipendente che lavora 24 ore su 24, 7 giorni su 7 — senza ferie, senza malattia, senza costi nascosti.</p>
+          <ul class="service-features" style="margin-bottom: var(--space-8);">
+            <li>Addestrato sui dati del tuo business (servizi, prezzi, orari, FAQ)</li>
+            <li>Risponde a tutte le domande dei clienti in tempo reale</li>
+            <li>Prenota appuntamenti sul tuo Google Calendar</li>
+            <li>Sposta e cancella appuntamenti automaticamente</li>
+            <li>Installabile sul sito nuovo o su quello esistente</li>
+            <li>Attivo 24/7 — di notte, nei weekend, durante le feste</li>
+          </ul>
+          <div class="service-price" style="border: none; padding-top: 0;">
+            <span class="service-price-value">€149</span>
+            <span class="service-price-period">/mese · meno di un decimo di uno stipendio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE: MANUTENZIONE -->
+  <section class="section">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <span class="section-label">Servizio 3</span>
+        <h2>Manutenzione Mensile</h2>
+        <p>Tieni il tuo sito sempre aggiornato, sicuro e funzionante. Ce ne occupiamo noi, tu non pensi a nulla.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Sicurezza</h3>
+          <p>Aggiornamenti di sicurezza continui, backup automatici, monitoraggio uptime. Il tuo sito è sempre protetto.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          </div>
+          <h3>Aggiornamenti contenuti</h3>
+          <p>Cambi orari, prezzi, servizi o foto? Lo facciamo noi. Piccole modifiche illimitate incluse nel piano mensile.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Aggiornamento John</h3>
+          <p>John viene aggiornato con nuove informazioni sul tuo business. Nuovi servizi? Nuove FAQ? John lo sa subito.</p>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top: var(--space-10);">
+        <div class="service-price" style="display: inline-flex; border: none; padding-top: 0;">
+          <span class="service-price-value">€49</span>
+          <span class="service-price-period">/mese · tutto incluso</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Pronto a mettere la tua attività online?</h2>
+        <p>Sito web in 24 ore, chatbot AI 24/7, manutenzione inclusa. Tutto pronto, tutto gestito. Tu pensi al tuo business.</p>
+        <a href="contatti.html" class="btn btn-lg">Inizia ora →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="logo.png" alt="Johnify">
+            Johnify
+          </a>
+          <p>Siti web professionali in 24 ore + chatbot AI John che risponde, prenota e gestisce appuntamenti 24/7. Meno di un decimo di uno stipendio.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Servizi</h4>
+          <ul>
+            <li><a href="servizi.html">Sito Web 24h</a></li>
+            <li><a href="chatbot.html">Chatbot John</a></li>
+            <li><a href="servizi.html">Manutenzione</a></li>
+            <li><a href="prezzi.html">Prezzi</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Azienda</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contatti.html">Contatti/Supporto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contatti</h4>
+          <ul>
+            <li><a href="mailto:info.johnify@gmail.com">info.johnify@gmail.com</a></li>
+            <li><a href="contatti.html">Modulo di contatto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Johnify. Tutti i diritti riservati.</span>
+        <span>Siti web in 24h · Chatbot AI 24/7</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHAT WIDGET -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-widget-window" id="chatWindow">
+      <div class="chat-widget-header">
+        <div class="chat-preview-avatar">J</div>
+        <div class="chat-widget-header-info">
+          <div class="chat-preview-name">John</div>
+          <div class="chat-preview-status">Online · Risponde subito</div>
+        </div>
+        <button class="chat-widget-close" id="chatClose" aria-label="Chiudi chat">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="chat-widget-messages" id="chatMessages">
+        <div class="chat-msg chat-msg-bot">Ciao! Sono John, l'assistente virtuale di Johnify. Come posso aiutarti oggi?</div>
+      </div>
+      <div class="chat-widget-input">
+        <input type="text" id="chatInput" placeholder="Scrivi un messaggio..." aria-label="Messaggio">
+        <button class="chat-widget-send" id="chatSend" aria-label="Invia">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+    </div>
+    <button class="chat-widget-toggle" id="chatToggle" aria-label="Apri chat con John">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      <span class="notification-dot"></span>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

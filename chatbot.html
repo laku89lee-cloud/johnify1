@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John — Il Chatbot AI che lavora 24/7 | Johnify</title>
+  <meta name="description" content="John è il chatbot AI di Johnify: addestrato sul tuo business, risponde 24/7, prenota e gestisce appuntamenti sul Google Calendar. Costa meno di un decimo di un dipendente.">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Public+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function(){
+      try {
+        var s = window['localStorage'];
+        var t = s ? s.getItem('johnify-theme') : null;
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch(e){}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo" aria-label="Johnify home">
+          <img src="logo.png" alt="Johnify">
+          Johnify
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servizi.html">Servizi</a></li>
+          <li><a href="chatbot.html" class="active">Chatbot John</a></li>
+          <li><a href="prezzi.html">Prezzi</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" data-theme-toggle aria-label="Cambia tema">
+            <svg id="themeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </button>
+          <a href="contatti.html" class="btn btn-primary">Inizia Ora</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Apri menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="badge">🤖 Il tuo assistente AI</span>
+          <h1>Conosci John.<br><span class="text-gradient">Il dipendente che non dorme mai.</span></h1>
+          <p>John è un chatbot AI addestrato sui dati del tuo business. Risponde a ogni domanda, prenota e gestisce appuntamenti sul tuo Google Calendar — 24 ore su 24, 7 giorni su 7. Costa meno di un decimo dello stipendio di un nuovo dipendente. E non va mai in ferie.</p>
+          <div class="hero-actions">
+            <a href="contatti.html" class="btn btn-primary btn-lg">Voglio John sul mio sito →</a>
+            <a href="#come-funziona" class="btn btn-secondary btn-lg">Come funziona</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="chat-preview">
+            <div class="chat-preview-header">
+              <div class="chat-preview-avatar">J</div>
+              <div>
+                <div class="chat-preview-name">John</div>
+                <div class="chat-preview-status">Online · 24/7</div>
+              </div>
+            </div>
+            <div class="chat-preview-body">
+              <div class="chat-msg chat-msg-bot">Ciao! Sono John, l'assistente di [Nome Attività]. Come posso aiutarti?</div>
+              <div class="chat-msg chat-msg-user">Avete posto sabato per un taglio?</div>
+              <div class="chat-msg chat-msg-bot">Ho controllato il calendario: sabato ho posto alle 10:30 o alle 15:00. Quale preferisci?</div>
+              <div class="chat-msg chat-msg-user">Alle 10:30 perfetto</div>
+              <div class="chat-msg chat-msg-bot">Fatto! Appuntamento confermato per sabato alle 10:30. Riceverai un'email di conferma. Ci vediamo!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY JOHN -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Perché John</span>
+        <h2>Il miglior dipendente che tu abbia mai avuto. A una frazione del costo.</h2>
+        <p>Pensaci: quanto costa assumere qualcuno che risponde al telefono e ai messaggi? Stipendio, contributi, ferie, malattie, formazione. E lavora 8 ore, non 24.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Risponde in 1 secondo</h3>
+          <p>Ogni messaggio, ogni domanda, ogni richiesta — John risponde istantaneamente. Niente code, niente attese, niente "vi richiamiamo". Il cliente ottiene subito quello che cerca.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Lavora mentre dormi</h3>
+          <p>Sabato notte alle 2? Domenica mattina? Durante le feste? John è lì. Mentre tu dormi, lui converte visitatori in clienti e prenota appuntamenti sul tuo calendario.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3>Mai un giorno libero</h3>
+          <p>Niente ferie. Niente malattia. Niente pause caffè. Niente turnover. John è lo stesso, ogni giorno, con la stessa qualità. Affidabile al 100%, senza sorprese.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>Gestisce il calendario da solo</h3>
+          <p>John controlla la disponibilità in tempo reale, propone gli slot liberi, crea l'appuntamento sul Google Calendar. Se il cliente vuole spostare o cancellare, lo fa in automatico.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C5.5 19.5 2 17 2 12V5a1 1 0 0 1 1-1c4 0 7-2 9-2s5 2 9 2a1 1 0 0 1 1 1z"/></svg>
+          </div>
+          <h3>Conosce il tuo business</h3>
+          <p>John viene addestrato con i tuoi dati: servizi, prezzi, orari, policy, location. Non è un chatbot generico — è il tuo assistente personale, che sa esattamente cosa offre la tua attività.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Costa €149/mese. Punto.</h3>
+          <p>Un dipendente ti costa €1.500-2.500 al mese + contributi + ferie + malattie. John costa €149 al mese. Tutto incluso. Nessun costo nascosto, nessuna sorpresa. Meno di un decimo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE MATH -->
+  <section class="section" id="come-funziona">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <span class="section-label">Fai i conti</span>
+        <h2>€149 al mese. Un dipendente costa 15 volte tanto.</h2>
+        <p>Non è un'approssimazione. È matematica elementare.</p>
+      </div>
+      <div class="comparison">
+        <div class="comparison-grid">
+          <div class="comparison-cell header">Costo annuale</div>
+          <div class="comparison-cell header highlight">John (AI)</div>
+          <div class="comparison-cell header">Dipendente</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-cell label">Stipendio lordo</div>
+          <div class="comparison-cell highlight">€1.788/anno</div>
+          <div class="comparison-cell">€18.000-30.000/anno</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-cell label">Contributi INPS (~30%)</div>
+          <div class="comparison-cell highlight">€0</div>
+          <div class="comparison-cell">€5.400-9.000/anno</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-cell label">TFR e accantonamenti</div>
+          <div class="comparison-cell highlight">€0</div>
+          <div class="comparison-cell">€1.500-2.500/anno</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-cell label">Ferie e permessi (costo)</div>
+          <div class="comparison-cell highlight">€0</div>
+          <div class="comparison-cell">€2.000-3.500/anno</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-cell label">Malattia e assenze</div>
+          <div class="comparison-cell highlight">€0</div>
+          <div class="comparison-cell">€500-1.500/anno</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-cell label" style="font-weight: 800;">Totale annuale</div>
+          <div class="comparison-cell highlight" style="font-size: var(--text-lg); font-weight: 800;">€1.788</div>
+          <div class="comparison-cell" style="font-size: var(--text-lg); font-weight: 800;">€27.400-46.500</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-cell label" style="font-weight: 800;">Risparmio annuale</div>
+          <div class="comparison-cell highlight" style="font-size: var(--text-lg); font-weight: 800; color: var(--color-success);">€25.600-44.700</div>
+          <div class="comparison-cell">—</div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top: var(--space-10);">
+        <a href="contatti.html" class="btn btn-primary btn-lg">Voglio risparmiare €25.000+/anno →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Come funziona</span>
+        <h2>John è pronto in 3 passi</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Ci racconti del tuo business</h3>
+          <p>Ci fornisci i dati: servizi, prezzi, orari, policy, FAQ, link al Google Calendar. Bastano 15 minuti del tuo tempo.</p>
+        </div>
+        <div class="step">
+          <h3>Addestriamo John</h3>
+          <p>Carichiamo i tuoi dati nel sistema. John impara tutto quello che c'è da sapere sulla tua attività. Lo colleghiamo al tuo calendario.</p>
+        </div>
+        <div class="step">
+          <h3>John va online</h3>
+          <p>Installiamo il widget sul tuo sito (nuovo o esistente). Da quel momento, John è attivo 24/7. Tu controlli i risultati dal dashboard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT JOHN CAN DO -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Cosa fa John</span>
+        <h2>Tutto quello che un dipendente farebbe. E qualcosa in più.</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Risponde alle domande</h3>
+          <p>"Quanto costa?", "Siete aperti la domenica?", "Fate consegne a domicilio?", "Dove siete ubicati?". John risponde a tutto, immediatamente, con precisione.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>Prenota appuntamenti</h3>
+          <p>Il cliente chiede un appuntamento? John controlla il Google Calendar, propone gli slot liberi, crea l'evento. Tutto automatico, tutto sul tuo calendario.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          </div>
+          <h3>Sposta e cancella</h3>
+          <p>Il cliente vuole cambiare orario? John sposta l'appuntamento. Deve cancellare? John libera lo slot. Il calendario è sempre aggiornato, senza che tu tocchi nulla.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALLATION -->
+  <section class="section section-alt">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <span class="section-label">Installazione</span>
+        <h2>Su qualsiasi sito. Nuovo o esistente.</h2>
+        <p>Non serve rifare il sito. John si installa ovunque.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" style="text-align: center;">
+          <div class="feature-icon" style="margin-inline: auto;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>Sito nuovo (da noi)</h3>
+          <p>Creiamo il tuo sito in 24 ore e installiamo John. Tutto pronto, tutto integrato.</p>
+        </div>
+        <div class="feature-card" style="text-align: center;">
+          <div class="feature-icon" style="margin-inline: auto;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>Sito esistente</h3>
+          <p>Hai già un sito? Inseriamo John con un semplice frammento di codice. Funziona su WordPress, Wix, Squarespace, Shopify, e qualsiasi piattaforma.</p>
+        </div>
+        <div class="feature-card" style="text-align: center;">
+          <div class="feature-icon" style="margin-inline: auto;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>Nessun sito? Nessun problema</h3>
+          <p>Se non hai un sito, te lo creiamo noi in 24 ore con John già installato. Pacchetto completo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <span class="section-label">Domande su John</span>
+        <h2>Tutto quello che vuoi sapere</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button class="faq-question">
+            John sostituisce completamente un dipendente?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">John sostituisce la parte di lavoro che riguarda rispondere alle domande dei clienti e gestire le prenotazioni. Non sostituisce il lavoro manuale o specialistico del tuo business. Ma per quello che riguarda la customer care e la gestione appuntamenti, è superiore a un essere umano: più veloce, sempre disponibile, e costa una frazione.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Cosa succede se John non sa rispondere a una domanda?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">John viene addestrato su tutto quello che riguarda il tuo business. Se riceve una domanda fuori dal suo ambito di conoscenza, risponde elegantemente che non ha quell'informazione e indirizza il cliente verso il canale più appropriato (telefono, email). Puoi anche aggiornare John con nuove informazioni in qualsiasi momento tramite il servizio di manutenzione.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Quanto tempo serve per addestrare John?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">L'addestramento completo richiede circa 24 ore dal momento in cui ci fornisci i dati del tuo business. Ci basta che ci mandi i tuoi servizi, i prezzi, gli orari, le policy, e l'accesso al Google Calendar. Faciamo noi il resto.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            John è sicuro? I miei dati sono protetti?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Sì. I dati del tuo business vengono usati esclusivamente per addestrare la tua istanza di John. Non vengono condivisi con terzi né utilizzati per altri scopi. L'integrazione con Google Calendar è protetta e usa solo i permessi necessari (lettura, creazione, modifica, eliminazione eventi).</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Posso vedere le conversazioni di John coi clienti?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Sì. Hai accesso a un dashboard dove puoi vedere tutte le conversazioni, gli appuntamenti prenotati, e le domande più frequenti. Questo ti permette di capire cosa vogliono i tuoi clienti e ottimizzare di conseguenza.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Ogni giorno senza John sono clienti persi</h2>
+        <p>€149 al mese. Attivo in 24 ore. Risparmia €25.000+ all'anno rispetto a un dipendente. Smetti di perdere clienti — inizia oggi.</p>
+        <a href="contatti.html" class="btn btn-lg">Voglio John adesso →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="logo.png" alt="Johnify">
+            Johnify
+          </a>
+          <p>Siti web professionali in 24 ore + chatbot AI John che risponde, prenota e gestisce appuntamenti 24/7. Meno di un decimo di uno stipendio.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Servizi</h4>
+          <ul>
+            <li><a href="servizi.html">Sito Web 24h</a></li>
+            <li><a href="chatbot.html">Chatbot John</a></li>
+            <li><a href="servizi.html">Manutenzione</a></li>
+            <li><a href="prezzi.html">Prezzi</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Azienda</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contatti.html">Contatti/Supporto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contatti</h4>
+          <ul>
+            <li><a href="mailto: info.johnify@gmail.com">info.johnify@gmail.com</a></li>
+            <li><a href="contatti.html">Modulo di contatto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Johnify. Tutti i diritti riservati.</span>
+        <span>Siti web in 24h · Chatbot AI 24/7</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHAT WIDGET -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-widget-window" id="chatWindow">
+      <div class="chat-widget-header">
+        <div class="chat-preview-avatar">J</div>
+        <div class="chat-widget-header-info">
+          <div class="chat-preview-name">John</div>
+          <div class="chat-preview-status">Online · Risponde subito</div>
+        </div>
+        <button class="chat-widget-close" id="chatClose" aria-label="Chiudi chat">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="chat-widget-messages" id="chatMessages">
+        <div class="chat-msg chat-msg-bot">Ciao! Sono John, l'assistente virtuale di Johnify. Come posso aiutarti oggi?</div>
+      </div>
+      <div class="chat-widget-input">
+        <input type="text" id="chatInput" placeholder="Scrivi un messaggio..." aria-label="Messaggio">
+        <button class="chat-widget-send" id="chatSend" aria-label="Invia">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+    </div>
+    <button class="chat-widget-toggle" id="chatToggle" aria-label="Apri chat con John">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      <span class="notification-dot"></span>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

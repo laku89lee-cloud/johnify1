@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prezzi — Johnify | Trasparenti e Onesti</title>
+  <meta name="description" content="Prezzi Johnify: sito web €350 una tantum, chatbot AI John €149/mese, manutenzione €80/mese. Nessun costo nascosto. Meno di un decimo di uno stipendio.">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Public+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function(){
+      try {
+        var s = window['localStorage'];
+        var t = s ? s.getItem('johnify-theme') : null;
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch(e){}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo" aria-label="Johnify home">
+          <img src="logo.png" alt="Johnify">
+          Johnify
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servizi.html">Servizi</a></li>
+          <li><a href="chatbot.html">Chatbot John</a></li>
+          <li><a href="prezzi.html" class="active">Prezzi</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" data-theme-toggle aria-label="Cambia tema">
+            <svg id="themeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </button>
+          <a href="contatti.html" class="btn btn-primary">Inizia Ora</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Apri menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">Prezzi trasparenti</span>
+      <h1>Prezzi onesti. Nessuna sorpresa.</h1>
+      <p>Tutto quello che vedi è tutto quello che paghi. Nessun costo nascosto, nessun contratto vincolante, nessuna sorpresa.</p>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section">
+    <div class="container">
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Sito Web</h3>
+          <p class="pricing-desc">Il tuo sito professionale, online in 24 ore.</p>
+          <div class="pricing-price">
+            <span class="pricing-price-value">€350</span>
+            <span class="pricing-price-period">una tantum</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Design moderno e responsive</li>
+            <li>Ottimizzato SEO per Google</li>
+            <li>Online in 24 ore</li>
+            <li>Dominio e hosting inclusi (1° anno)</li>
+            <li>Integrazione Google Maps e Calendar</li>
+            <li>Modulo di contatto integrato</li>
+            <li>Pulsanti click-to-call e WhatsApp</li>
+            <li>Sezione recensioni clienti</li>
+          </ul>
+          <a href="contatti.html" class="btn btn-secondary btn-block">Inizia con il sito</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <h3>Chatbot John</h3>
+          <p class="pricing-desc">Il tuo assistente AI che lavora 24/7.</p>
+          <div class="pricing-price">
+            <span class="pricing-price-value">€149</span>
+            <span class="pricing-price-period">/mese</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Addestrato sui dati del tuo business</li>
+            <li>Risponde a tutte le domande dei clienti</li>
+            <li>Prenota appuntamenti sul Google Calendar</li>
+            <li>Sposta e cancella appuntamenti</li>
+            <li>Attivo 24/7 — giorno, notte, weekend</li>
+            <li>Installabile su qualsiasi sito</li>
+            <li>Dashboard conversazioni e statistiche</li>
+            <li>Aggiornamenti inclusi</li>
+          </ul>
+          <a href="contatti.html" class="btn btn-primary btn-block">Voglio John →</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Manutenzione</h3>
+          <p class="pricing-desc">Tieni tutto aggiornato e sicuro.</p>
+          <div class="pricing-price">
+            <span class="pricing-price-value">€80</span>
+            <span class="pricing-price-period">/mese per servizio, 120/mese completa</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Aggiornamenti di sicurezza</li>
+            <li>Backup automatici</li>
+            <li>Monitoraggio uptime</li>
+            <li>Piccole modifiche contenuti illimitate</li>
+            <li>Aggiornamento dati chatbot John</li>
+            <li>Supporto via email</li>
+            <li>Report mensile performance</li>
+          </ul>
+          <a href="contatti.html" class="btn btn-secondary btn-block">Prenota una call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUNDLE -->
+  <section class="section section-alt">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <span class="section-label">Il pacchetto completo</span>
+        <h2>Tutto incluso. Prezzo speciale.</h2>
+        <p>Sito + John + Manutenzione. Il pacchetto completo per dominare online.</p>
+      </div>
+      <div class="pricing-card featured" style="max-width: 560px; margin-inline: auto;">
+        <h3>Pacchetto Completo Johnify</h3>
+        <p class="pricing-desc">Sito web + Chatbot John + Manutenzione mensile di entrambi. Tutto incluso.</p>
+        <div class="pricing-price">
+          <span class="pricing-price-value">€599</span>
+          <span class="pricing-price-period">primo mese, poi €219/mese</span>
+        </div>
+        <ul class="pricing-features">
+          <li>Sito web professionale (€350 incluso)</li>
+          <li>Chatbot John attivo 24/7 (€149/mese)</li>
+          <li>Manutenzione mensile completa (€120/mese)</li>
+          <li>Online in 24 ore</li>
+          <li>John addestrato e installato</li>
+          <li>Tutto gestito da noi</li>
+          <li>Nessun costo nascosto</li>
+        </ul>
+        <a href="contatti.html" class="btn btn-primary btn-block btn-lg">Voglio il pacchetto completo →</a>
+      </div>
+      <p style="text-align: center; margin-top: var(--space-6); color: var(--color-text-muted); font-size: var(--text-sm);">
+        Risparmi €149 sul primo mese rispetto all'acquisto separato.
+      </p>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Confronto</span>
+        <h2>John vs. Un dipendente — I numeri</h2>
+      </div>
+      <div class="comparison">
+        <div class="comparison-grid">
+          <div class="comparison-cell header"></div>
+          <div class="comparison-cell header highlight">John (AI)</div>
+          <div class="comparison-cell header">Dipendente</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-cell label">Costo mensile</div>
+          <div class="comparison-cell highlight">€149/mese</div>
+          <div class="comparison-cell">€1.500-2.500/mese</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-cell label">Costo annuale (con contributi)</div>
+          <div class="comparison-cell highlight">€1.788/anno</div>
+          <div class="comparison-cell">€27.400-46.500/anno</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-cell label">Orari di lavoro</div>
+          <div class="comparison-cell highlight">24/7 (168h/settimana)</div>
+          <div class="comparison-cell">8h/giorno (40h/settimana)</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-cell label">Tempo di risposta</div>
+          <div class="comparison-cell highlight">Istantaneo (&lt;1s)</div>
+          <div class="comparison-cell">Minuti o ore</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-cell label">Ferie e malattia</div>
+          <div class="comparison-cell highlight">
+            <svg class="comparison-icon-yes" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            Mai
+          </div>
+          <div class="comparison-cell">
+            <svg class="comparison-icon-no" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            Sì
+          </div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-cell label">Gestione Google Calendar</div>
+          <div class="comparison-cell highlight">
+            <svg class="comparison-icon-yes" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            Automatica
+          </div>
+          <div class="comparison-cell">
+            <svg class="comparison-icon-no" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            Manuale
+          </div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-cell label">Risparmio annuale</div>
+          <div class="comparison-cell highlight" style="font-weight: 800; color: var(--color-success);">€25.600-44.700</div>
+          <div class="comparison-cell">—</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <span class="section-label">Domande sui prezzi</span>
+        <h2>Domande frequenti</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button class="faq-question">
+            Ci sono costi nascosti?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No. I prezzi che vedi sono i prezzi che paghi. Il sito web costa €350 una tantum, mentre il setup completo del sito costa 50€ una tantum. Il chatbot John costa €149/mese, mentre il setup completo costa 50€ una tantum. La manutenzione costa €80/mese per ciascuno dei servizi (sito o chatbot), mentre la manutenzione completa (sito + chatbot) costa 120€/mese invece di 160, quindi 25% in meno. Il dominio e l'hosting sono inclusi PER SEMPRE. Tutto qui.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Devo firmare un contratto vincolante?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No. Il chatbot e la manutenzione sono mese per mese. Puoi annullare con 24 ore di preavviso. Il sito web è tuo: resta online anche se smetti il servizio di manutenzione. Nessun vincolo, nessuna penale.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Come funziona il pagamento?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Il sito web si paga una tantum alla conferma. Il chatbot e la manutenzione si pagano mensilmente tramite bonifico o carta di credito. Ricevi la fattura ogni mese.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Il sito web resta mio se smetto la manutenzione?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Assolutamente sì. Il sito è tuo al 100%. Se smetti il servizio di manutenzione, il sito resta online e funzionante. Perderai solo la possibilità di ricevere da noi gli aggiornamenti di sicurezza e le modifiche ai contenuti, ma il sito resta tuo.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>€149/mese. Risparmia €25.000+/anno.</h2>
+        <p>Smetti di perdere clienti e di pagare stipendi inutili. John lavora 24/7 per una frazione del costo. Inizia oggi.</p>
+        <a href="contatti.html" class="btn btn-lg">Inizia ora →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="logo.png" alt="Johnify">
+            Johnify
+          </a>
+          <p>Siti web professionali in 24 ore + chatbot AI John che risponde, prenota e gestisce appuntamenti 24/7. Meno di un decimo di uno stipendio.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Servizi</h4>
+          <ul>
+            <li><a href="servizi.html">Sito Web 24h</a></li>
+            <li><a href="chatbot.html">Chatbot John</a></li>
+            <li><a href="servizi.html">Manutenzione</a></li>
+            <li><a href="prezzi.html">Prezzi</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Azienda</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contatti.html">Contatti/Supporto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contatti</h4>
+          <ul>
+            <li><a href="mailto:info.johnify@gmail.com">info.johnify@gmail.com</a></li>
+            <li><a href="contatti.html">Modulo di contatto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Johnify. Tutti i diritti riservati.</span>
+        <span>Siti web in 24h · Chatbot AI 24/7</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHAT WIDGET -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-widget-window" id="chatWindow">
+      <div class="chat-widget-header">
+        <div class="chat-preview-avatar">J</div>
+        <div class="chat-widget-header-info">
+          <div class="chat-preview-name">John</div>
+          <div class="chat-preview-status">Online · Risponde subito</div>
+        </div>
+        <button class="chat-widget-close" id="chatClose" aria-label="Chiudi chat">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="chat-widget-messages" id="chatMessages">
+        <div class="chat-msg chat-msg-bot">Ciao! Sono John, l'assistente virtuale di Johnify. Come posso aiutarti oggi?</div>
+      </div>
+      <div class="chat-widget-input">
+        <input type="text" id="chatInput" placeholder="Scrivi un messaggio..." aria-label="Messaggio">
+        <button class="chat-widget-send" id="chatSend" aria-label="Invia">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+    </div>
+    <button class="chat-widget-toggle" id="chatToggle" aria-label="Apri chat con John">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      <span class="notification-dot"></span>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
